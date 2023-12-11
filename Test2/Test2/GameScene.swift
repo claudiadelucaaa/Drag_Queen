@@ -232,7 +232,7 @@ class GameScene: SKScene {
     
     // MARK: - Hero position
     func createHero() {
-        addHero(at: CGPoint(x: size.width / 2, y: size.height / 3))
+        addHero(at: CGPoint(x: size.width / 2, y: size.height / 2))
     }
     
    /* func createAudio() {
