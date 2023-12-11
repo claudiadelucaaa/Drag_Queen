@@ -246,18 +246,45 @@ class GameScene: SKScene {
     
     // MARK: - Enemy
     
-    func createEnemy(width: CGFloat) {
+    func createEnemy() {
         let enemyNode = SKNode()
         let enemySpriteNode = SKSpriteNode(texture: textures.heroRunTextureArray[0])
         let enemyAnimation = SKAction.animate(with: textures.heroRunTextureArray, timePerFrame: 0.1)
         let enemyAnimationRepeat = SKAction.repeatForever(enemyAnimation)
         enemySpriteNode.run(enemyAnimationRepeat)
         
-        enemySpriteNode.position = CGPoint(x:  self.size.width - 50, y: 2)
-        enemySpriteNode.zPosition = 1
-        enemySpriteNode.setScale(2)
+        enemySpriteNode.setScale(2.0)
         
         enemySpriteNode.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: textures.enemyTexture[0].size().width, height: textures.enemyTexture[0].size().height))
+//        enemySpriteNode.setScale(3)
+        let direction = Bool.random()
+        
+        if direction {
+            print("derecha")
+            enemySpriteNode.position = CGPoint(x: size.width - 40, y: size.height / 4)
+            enemySpriteNode.zPosition = 1
+            enemySpriteNode.xScale *= -1
+        
+            // duration till the enemy arrives at -150
+            let moveLeft = SKAction.moveBy(x: -size.width - 150, y: 0, duration: 10.0)
+            let moveLeftRepeat = SKAction.repeatForever(moveLeft)
+            enemySpriteNode.run(moveLeftRepeat)
+            
+            
+        } else{
+            print("izquierda")
+            
+            enemySpriteNode.position = CGPoint(x: size.width/8 , y: size.height / 12)
+            enemySpriteNode.zPosition = 1
+            enemySpriteNode.xScale *= 1
+            
+            
+            // duration till the enemy arrives at 150
+            let moveRight = SKAction.moveBy(x: size.width + 150, y: 0, duration: 10.0)
+            let moveRightRepeat = SKAction.repeatForever(moveRight)
+            enemySpriteNode.run(moveRightRepeat)
+        }
+        
         
         enemySpriteNode.physicsBody?.categoryBitMask = enemyMask
         enemySpriteNode.physicsBody?.contactTestBitMask = heroMask
@@ -267,16 +294,34 @@ class GameScene: SKScene {
         enemySpriteNode.physicsBody?.affectedByGravity = true
         enemySpriteNode.physicsBody?.allowsRotation = false
         
-//        duration till the enemy arrive the -100
-        let moveLeft = SKAction.moveBy(x: -100, y: 0, duration: 0.5)
-        let moveLeftRepeat = SKAction.repeatForever(moveLeft)
-        enemySpriteNode.run(moveLeftRepeat)
         
         enemyNodeArray.append(enemyNode)
         enemyNode.addChild(enemySpriteNode)
         addChild(enemyNode)
     }
 
+    // MARK: - random num enemies inicialiced
+    
+    func startSpawn() {
+        var timeInterval: TimeInterval = 4.0
+        
+
+        timer = Timer.scheduledTimer(withTimeInterval: timeInterval, repeats: true) { _ in
+            
+//            self.createEnemy(direction: randomDirection)
+            self.createEnemy()
+
+            // Reduzca el intervalo de tiempo para aumentar la frecuencia con el tiempo
+            timeInterval *= 0.1
+            // Asegúrate de que el intervalo de tiempo no sea menor que un límite mínimo
+            timeInterval = max(timeInterval, 0.5)
+            print("Enemy created")
+        
+            // Puedes ajustar los valores según sea necesario
+        }
+    }
+    
+    
     
     // MARK: - herojump
     /*
@@ -293,29 +338,15 @@ class GameScene: SKScene {
     }
     */
     
+    
+    
     // MARK: - herodied
     func heroDied() {
         let deathAnim = SKAction.animate(with: textures.dragWalking , timePerFrame: 0.1)
         heroSpriteNode.run(deathAnim)
     }
     
-    
-    // MARK: - random num enemies inicialiced
-    
-    func startSpawn() {
-        var timeInterval: TimeInterval = 3.0
 
-        timer = Timer.scheduledTimer(withTimeInterval: timeInterval, repeats: true) { _ in
-            self.createEnemy(width: self.size.width - self.size.width/20)
-
-            // Reduzca el intervalo de tiempo para aumentar la frecuencia con el tiempo
-            timeInterval *= 0.2
-            // Asegúrate de que el intervalo de tiempo no sea menor que un límite mínimo
-            timeInterval = max(timeInterval, 0.5)
-            
-            // Puedes ajustar los valores según sea necesario
-        }
-    }
 
 //    func startSpawn() {
 //        timer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { _ in
