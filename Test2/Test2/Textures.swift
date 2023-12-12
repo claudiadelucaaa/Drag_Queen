@@ -78,4 +78,10 @@ class Textures {
                                      SKTexture(imageNamed: "fly06"),
                                      SKTexture(imageNamed: "fly07")
     ]
+    let dragAttack: [SKTexture] = [SKTexture(imageNamed: "Warrior-Slide_1"),
+                                     SKTexture(imageNamed: "Warrior-Slide_2"),
+                                     SKTexture(imageNamed: "Warrior-Slide_3"),
+                                     SKTexture(imageNamed: "Warrior-Slide_4"),
+                                     SKTexture(imageNamed: "Warrior-Slide_5")
+    ]
 }
