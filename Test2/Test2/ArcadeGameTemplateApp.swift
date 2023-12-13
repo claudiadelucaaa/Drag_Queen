@@ -5,4 +5,13 @@
 //  Created by yatziri on 13/12/23.
 //
 
-import Foundation
+import SwiftUI
+
+@main
+struct ArcadeGameTemplateApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}

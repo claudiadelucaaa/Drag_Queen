@@ -4,7 +4,7 @@
 //
 //  Created by yatziri on 12/12/23.
 //
-
+import SwiftUI
 
 struct GameScoreView: View {
     @Binding var score: Int

@@ -265,6 +265,11 @@ class GameScene: SKScene {
     func heroDied() {
         let deathAnim = SKAction.animate(with: textures.deathTextureArray, timePerFrame: 0.2)
         heroSpriteNode.run(deathAnim) {
+            self.gameLogic.lives(points: 1)
+            print("lives: \(self.gameLogic.liveScore)")
+//            self.restartGame()
+        }
+        if gameLogic.liveScore == 0 {
             self.restartGame()
         }
     }

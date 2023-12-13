@@ -15,12 +15,9 @@ class ArcadeGameLogic: ObservableObject {
     
     // Function responsible to set up the game before it starts.
     func setUpGame() {
-        
-        // TODO: Customize!
-        
         self.currentScore = 0
         self.sessionDuration = 0
-        
+        self.liveScore = 3
         self.isGameOver = false
     }
     
@@ -34,6 +31,9 @@ class ArcadeGameLogic: ObservableObject {
         
         self.currentScore = self.currentScore + points
     }
+    
+    
+    
     
     // Keep tracks of the duration of the current session in number of seconds
     @Published var sessionDuration: TimeInterval = 0
@@ -49,6 +49,8 @@ class ArcadeGameLogic: ObservableObject {
         self.setUpGame()
     }
     
+    
+    
     // Game Over Conditions
     @Published var isGameOver: Bool = false
     
@@ -56,6 +58,16 @@ class ArcadeGameLogic: ObservableObject {
         if self.isGameOver == false {
             self.isGameOver = true
         }
+    }
+    
+    
+    
+    @Published var liveScore: Int = 3
+    
+    // Reduce the lives by a certain amount of points
+    func lives(points: Int) {
+        
+        self.liveScore = self.liveScore - points
     }
     
 }

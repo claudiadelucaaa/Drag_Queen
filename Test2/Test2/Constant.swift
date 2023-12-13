@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
+
+
+
+enum GameState {
+    case playing
+    case gameOver
+}
