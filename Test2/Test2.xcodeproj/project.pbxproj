@@ -8,18 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6537C7932B270893000E9DD6 /* Textures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6537C7922B270893000E9DD6 /* Textures.swift */; };
-		653F9D802B29BA7000FA789A /* BiancaAttack4.png in Resources */ = {isa = PBXBuildFile; fileRef = 653F9D7A2B29BA7000FA789A /* BiancaAttack4.png */; };
-		653F9D812B29BA7000FA789A /* BiancaAttack5.png in Resources */ = {isa = PBXBuildFile; fileRef = 653F9D7B2B29BA7000FA789A /* BiancaAttack5.png */; };
-		653F9D822B29BA7000FA789A /* BiancaAttack6.png in Resources */ = {isa = PBXBuildFile; fileRef = 653F9D7C2B29BA7000FA789A /* BiancaAttack6.png */; };
-		653F9D832B29BA7000FA789A /* BiancaAttack2.png in Resources */ = {isa = PBXBuildFile; fileRef = 653F9D7D2B29BA7000FA789A /* BiancaAttack2.png */; };
-		653F9D842B29BA7000FA789A /* BiancaAttack3.png in Resources */ = {isa = PBXBuildFile; fileRef = 653F9D7E2B29BA7000FA789A /* BiancaAttack3.png */; };
-		653F9D852B29BA7000FA789A /* BiancaAttack1.png in Resources */ = {isa = PBXBuildFile; fileRef = 653F9D7F2B29BA7000FA789A /* BiancaAttack1.png */; };
 		654127982B221C8C007789E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654127972B221C8C007789E4 /* AppDelegate.swift */; };
 		6541279A2B221C8C007789E4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 654127992B221C8C007789E4 /* GameScene.sks */; };
 		6541279C2B221C8C007789E4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6541279B2B221C8C007789E4 /* Actions.sks */; };
 		6541279E2B221C8C007789E4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6541279D2B221C8C007789E4 /* GameScene.swift */; };
 		654127A52B221C8C007789E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 654127A42B221C8C007789E4 /* Assets.xcassets */; };
-		654127A82B221C8C007789E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654127A62B221C8C007789E4 /* LaunchScreen.storyboard */; };
 		657DBF892B2354A50023AB98 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657DBF882B2354A50023AB98 /* StartViewController.swift */; };
 		657DBF902B23550D0023AB98 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657DBF8F2B23550D0023AB98 /* GameViewController.swift */; };
 		657DBF942B2358A20023AB98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657DBF932B2358A20023AB98 /* Main.storyboard */; };
@@ -59,19 +52,12 @@
 
 /* Begin PBXFileReference section */
 		6537C7922B270893000E9DD6 /* Textures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textures.swift; sourceTree = "<group>"; };
-		653F9D7A2B29BA7000FA789A /* BiancaAttack4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BiancaAttack4.png; sourceTree = "<group>"; };
-		653F9D7B2B29BA7000FA789A /* BiancaAttack5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BiancaAttack5.png; sourceTree = "<group>"; };
-		653F9D7C2B29BA7000FA789A /* BiancaAttack6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BiancaAttack6.png; sourceTree = "<group>"; };
-		653F9D7D2B29BA7000FA789A /* BiancaAttack2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BiancaAttack2.png; sourceTree = "<group>"; };
-		653F9D7E2B29BA7000FA789A /* BiancaAttack3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BiancaAttack3.png; sourceTree = "<group>"; };
-		653F9D7F2B29BA7000FA789A /* BiancaAttack1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BiancaAttack1.png; sourceTree = "<group>"; };
 		654127942B221C8C007789E4 /* Test2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		654127972B221C8C007789E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		654127992B221C8C007789E4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		6541279B2B221C8C007789E4 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		6541279D2B221C8C007789E4 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		654127A42B221C8C007789E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		654127A72B221C8C007789E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		657DBF882B2354A50023AB98 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		657DBF8F2B23550D0023AB98 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		657DBF932B2358A20023AB98 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -120,20 +106,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		653F9D792B29BA7000FA789A /* Bianca_Attack */ = {
-			isa = PBXGroup;
-			children = (
-				653F9D7A2B29BA7000FA789A /* BiancaAttack4.png */,
-				653F9D7B2B29BA7000FA789A /* BiancaAttack5.png */,
-				653F9D7C2B29BA7000FA789A /* BiancaAttack6.png */,
-				653F9D7D2B29BA7000FA789A /* BiancaAttack2.png */,
-				653F9D7E2B29BA7000FA789A /* BiancaAttack3.png */,
-				653F9D7F2B29BA7000FA789A /* BiancaAttack1.png */,
-			);
-			name = Bianca_Attack;
-			path = ../../../../../Desktop/Bianca_Attack;
-			sourceTree = "<group>";
-		};
 		6541278B2B221C8B007789E4 = {
 			isa = PBXGroup;
 			children = (
@@ -163,12 +135,10 @@
 				6537C7922B270893000E9DD6 /* Textures.swift */,
 				657DBF8C2B2354C40023AB98 /* Controller */,
 				654127A42B221C8C007789E4 /* Assets.xcassets */,
-				653F9D792B29BA7000FA789A /* Bianca_Attack */,
 				7853FC182B2779A6008B06D8 /* atac */,
 				7853FBFF2B277316008B06D8 /* die */,
 				657DBF992B237FFA0023AB98 /* Run */,
 				657DBF932B2358A20023AB98 /* Main.storyboard */,
-				654127A62B221C8C007789E4 /* LaunchScreen.storyboard */,
 				7853FC242B286F91008B06D8 /* GameDurationView.swift */,
 				7853FC262B286FB1008B06D8 /* GameScoreView.swift */,
 				7853FBFD2B276E63008B06D8 /* Arcade_GameLogic.swift */,
@@ -292,7 +262,6 @@
 			files = (
 				7853FC102B2773AF008B06D8 /* Warrior_Death_8.png in Resources */,
 				657DBFA62B237FFA0023AB98 /* Warrior_Run_5.png in Resources */,
-				653F9D802B29BA7000FA789A /* BiancaAttack4.png in Resources */,
 				657DBF942B2358A20023AB98 /* Main.storyboard in Resources */,
 				7853FC0D2B2773AF008B06D8 /* Warrior_Death_10.png in Resources */,
 				7853FC1E2B2779CF008B06D8 /* Warrior-Slide_5.png in Resources */,
@@ -303,23 +272,17 @@
 				7853FC0E2B2773AF008B06D8 /* Warrior_Death_1.png in Resources */,
 				7853FC202B2779CF008B06D8 /* Warrior-Slide_1.png in Resources */,
 				657DBFA32B237FFA0023AB98 /* Warrior_Run_3.png in Resources */,
-				653F9D852B29BA7000FA789A /* BiancaAttack1.png in Resources */,
-				654127A82B221C8C007789E4 /* LaunchScreen.storyboard in Resources */,
 				657DBFA52B237FFA0023AB98 /* Warrior_Run_1.png in Resources */,
 				7853FC122B2773AF008B06D8 /* Warrior_Death_3.png in Resources */,
-				653F9D822B29BA7000FA789A /* BiancaAttack6.png in Resources */,
 				657DBFA92B237FFA0023AB98 /* Warrior_Run_7.png in Resources */,
 				6541279C2B221C8C007789E4 /* Actions.sks in Resources */,
 				7853FC172B2773AF008B06D8 /* Warrior_Death_6.png in Resources */,
 				7853FC162B2773AF008B06D8 /* Warrior_Death_4.png in Resources */,
 				7853FC142B2773AF008B06D8 /* Warrior_Death_9.png in Resources */,
 				7853FC132B2773AF008B06D8 /* Warrior_Death_2.png in Resources */,
-				653F9D832B29BA7000FA789A /* BiancaAttack2.png in Resources */,
 				7853FC1F2B2779CF008B06D8 /* Warrior-Slide_4.png in Resources */,
 				7853FC222B2779CF008B06D8 /* Warrior-Slide_3.png in Resources */,
 				657DBFA22B237FFA0023AB98 /* Warrior_Run_8.png in Resources */,
-				653F9D842B29BA7000FA789A /* BiancaAttack3.png in Resources */,
-				653F9D812B29BA7000FA789A /* BiancaAttack5.png in Resources */,
 				7853FC152B2773AF008B06D8 /* Warrior_Death_11.png in Resources */,
 				657DBFA72B237FFA0023AB98 /* Warrior_Run_4.png in Resources */,
 				657DBFA42B237FFA0023AB98 /* Warrior_Run_2.png in Resources */,
@@ -352,17 +315,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		654127A62B221C8C007789E4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				654127A72B221C8C007789E4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		654127A92B221C8C007789E4 /* Debug */ = {
@@ -491,7 +443,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SFL626YUT9;
+				DEVELOPMENT_TEAM = Z7AQTK42KX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
@@ -519,7 +471,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SFL626YUT9;
+				DEVELOPMENT_TEAM = Z7AQTK42KX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;

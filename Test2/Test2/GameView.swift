@@ -41,10 +41,13 @@ struct GameView: View {
     }
     
     var body: some View {
+        
         ZStack(alignment: .top) {
             // View that presents the game scene
             SpriteView(scene: self.arcadeGameScene)
                 .frame(width: screenWidth, height: screenHeight)
+                .position(CGPoint(x: screenWidth / 2 , y: screenHeight / 2))
+                .ignoresSafeArea()
                 .statusBar(hidden: true)
             
             HStack() {
