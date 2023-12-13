@@ -52,7 +52,7 @@ struct GameView: View {
                  * UI element showing the duration of the game session.
                  * Remove it if your game is not based on time.
                  */
-                GameDurationView(time: $gameLogic.sessionDuration)
+                GameDurationView(lives: $gameLogic.liveScore)
                 
                 Spacer()
                 

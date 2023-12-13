@@ -15,25 +15,40 @@ import SwiftUI
  */
 
 struct GameDurationView: View {
-    @Binding var time: TimeInterval
+    @Binding var lives: Int
     
     var body: some View {
-        HStack {
-            Image(systemName: "clock")
-                .font(.headline)
-            Spacer()
-            Text("\(Int(time))")
-                .font(.headline)
+        ZStack{
+            Rectangle()
+                .background(Color(UIColor.systemGray6))
+                .opacity(0.5)
+                .cornerRadius(10)
+                .frame(height:  60)
+            HStack {
+                
+                ForEach(0..<lives, id: \.self) { index in
+                    Image("Laca")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 50)
+                    
+                }
+                
+                Spacer()
+                Text("\(lives)")
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .padding()
+            }
+            
         }
-        .frame(minWidth: 100)
-        .padding(24)
-        .foregroundColor(.black)
-        .background(Color(UIColor.systemGray6))
-        .cornerRadius(10)
+//        .frame(minWidth: 100)
+//        .padding(24)
+        
     }
 }
 
 #Preview {
-    GameDurationView(time: .constant(1000))
+    GameDurationView(lives: .constant(3))
         .previewLayout(.fixed(width: 300, height: 100))
 }
