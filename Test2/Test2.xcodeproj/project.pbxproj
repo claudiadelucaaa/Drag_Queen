@@ -120,7 +120,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		653F9D792B29BA7000FA789A /* BiancaAttack */ = {
+		653F9D792B29BA7000FA789A /* Bianca_Attack */ = {
 			isa = PBXGroup;
 			children = (
 				653F9D7A2B29BA7000FA789A /* BiancaAttack4.png */,
@@ -130,8 +130,8 @@
 				653F9D7E2B29BA7000FA789A /* BiancaAttack3.png */,
 				653F9D7F2B29BA7000FA789A /* BiancaAttack1.png */,
 			);
-			name = BiancaAttack;
-			path = ../../../../../Desktop/BiancaAttack;
+			name = Bianca_Attack;
+			path = ../../../../../Desktop/Bianca_Attack;
 			sourceTree = "<group>";
 		};
 		6541278B2B221C8B007789E4 = {
@@ -163,7 +163,7 @@
 				6537C7922B270893000E9DD6 /* Textures.swift */,
 				657DBF8C2B2354C40023AB98 /* Controller */,
 				654127A42B221C8C007789E4 /* Assets.xcassets */,
-				653F9D792B29BA7000FA789A /* BiancaAttack */,
+				653F9D792B29BA7000FA789A /* Bianca_Attack */,
 				7853FC182B2779A6008B06D8 /* atac */,
 				7853FBFF2B277316008B06D8 /* die */,
 				657DBF992B237FFA0023AB98 /* Run */,
