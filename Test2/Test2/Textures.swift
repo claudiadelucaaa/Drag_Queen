@@ -27,9 +27,7 @@ class Textures {
     
     let laganjaWalking : [SKTexture] = [SKTexture(imageNamed: "Laganja1"),
                                         SKTexture(imageNamed: "Laganja2"),
-                                        SKTexture(imageNamed: "Laganja3"),
-                                        SKTexture(imageNamed: "Laganja1"),
-                                        SKTexture(imageNamed: "Laganja2")
+                                        SKTexture(imageNamed: "Laganja3")
          ]
     
     let heroRunTextureArray : [SKTexture] = [SKTexture(imageNamed: "Warrior_Run_1"),
@@ -84,6 +82,7 @@ class Textures {
                                      SKTexture(imageNamed: "fly06"),
                                      SKTexture(imageNamed: "fly07")
     ]
+    
     let biancaAttack: [SKTexture] = [SKTexture(imageNamed: "BiancaAttack1"),
                                      SKTexture(imageNamed: "BiancaAttack2"),
                                      SKTexture(imageNamed: "BiancaAttack3"),
@@ -91,6 +90,13 @@ class Textures {
                                      SKTexture(imageNamed: "BiancaAttack5"),
                                    SKTexture(imageNamed: "BiancaAttack6")
     ]
+    
+    let laganjaAttack : [SKTexture] = [SKTexture(imageNamed: "Laganja4"),
+                                        SKTexture(imageNamed: "Laganja5"),
+                                        SKTexture(imageNamed: "Laganja6"),
+                                        SKTexture(imageNamed: "Laganja7")
+    ]
+    
 }
 
 struct drag {
@@ -98,6 +104,7 @@ struct drag {
     var name: String
     var image: String
     var superPower: String
+    var pic: String
 }
 
 struct dragGif {
@@ -105,10 +112,10 @@ struct dragGif {
 }
 
 class Drags {
-    let dragS =         [drag(name: "Bianca", image: "Bianca1", superPower: "Twist"),
-                         drag(name: "Laganja", image: "Laganja1", superPower: "Lacca"),
-                         drag(name: "Bianca3", image: "Bianca3", superPower: "Wings"),
-                         drag(name: "Bianca4", image: "Bianca4", superPower: "No one")
+    let dragS =         [drag(name: "Bianca", image: "Bianca1", superPower: "Twist", pic: "Biancapic"),
+                         drag(name: "Laganja", image: "Laganja1", superPower: "Lacca", pic: "Laganjapic"),
+                         drag(name: "Jiggly", image: "Bianca3", superPower: "Wings", pic: "Jigglypic"),
+                         drag(name: "Courtney", image: "Bianca4", superPower: "No one", pic: "Courtneypic")
     ]
     
     let biancaGif = [dragGif(image: "Bianca1"),

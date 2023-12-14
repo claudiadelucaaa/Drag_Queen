@@ -41,7 +41,7 @@ struct ChooseChar: View {
                             }
                         }, label: {
                             VStack {
-                                Image(drg.image)
+                                Image(drg.pic)
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 180.0, height: 120.0)
@@ -57,7 +57,7 @@ struct ChooseChar: View {
                     .opacity(0.5)
                     .foregroundStyle(Color.white))
                 
-            }
+            }.padding(.top)
             .frame(width: 350, height: screenHeight)
             
             ZStack {
