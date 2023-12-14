@@ -273,7 +273,7 @@ class GameScene: SKScene {
         }
     }
     private func restartGame() {
-        self.gameLogic.restartGame()
+        self.gameLogic.restart_Game()
 //        //Clean up the scene
 //        removeAllActions()
 //        removeAllChildren()
