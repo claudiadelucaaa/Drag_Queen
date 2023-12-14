@@ -166,7 +166,7 @@ class GameScene: SKScene {
      
      // MARK: - Enemy
      
-     func createEnemy() {
+    func createEnemy(fast: TimeInterval) {
          let enemyNode = SKNode()
          let enemySpriteNode = SKSpriteNode(texture: textures.heroRunTextureArray[0])
          let enemyAnimation = SKAction.animate(with: textures.heroRunTextureArray, timePerFrame: 0.1)
@@ -200,7 +200,7 @@ class GameScene: SKScene {
              
              
              // duration till the enemy arrives at 150
-             let moveRight = SKAction.moveBy(x: size.width + 150, y: 0, duration: 10.0)
+             let moveRight = SKAction.moveBy(x: size.width + 150, y: 0, duration: fast)
              let moveRightRepeat = SKAction.repeatForever(moveRight)
              enemySpriteNode.run(moveRightRepeat)
          }
@@ -222,25 +222,45 @@ class GameScene: SKScene {
 
      // MARK: - random num enemies inicialiced
      
-     func startSpawn() {
-         var timeInterval: TimeInterval = 4.0
-         
+//     func startSpawn() {
+//         var timeInterval: TimeInterval = 4.0
+//         
+//
+//         timer = Timer.scheduledTimer(withTimeInterval: timeInterval, repeats: true) { _ in
+//             
+// //            self.createEnemy(direction: randomDirection)
+//             self.createEnemy()
+//
+//             // Reduzca el intervalo de tiempo para aumentar la frecuencia con el tiempo
+//             timeInterval *= 0.3
+//             // Asegúrate de que el intervalo de tiempo no sea menor que un límite mínimo
+//             timeInterval = max(timeInterval, 0.5)
+//             print("Enemy created")
+//         
+//             // Puedes ajustar los valores según sea necesario
+//         }
+//     }
+    func startSpawn() {
+        var timeInterval: TimeInterval = 4.0
+        var fast: TimeInterval = 10.0
 
-         timer = Timer.scheduledTimer(withTimeInterval: timeInterval, repeats: true) { _ in
-             
- //            self.createEnemy(direction: randomDirection)
-             self.createEnemy()
+        timer = Timer.scheduledTimer(withTimeInterval: timeInterval, repeats: true) { _ in
+            
+            self.createEnemy(fast: fast)
+            fast -= 0.6
+            // Reduzca el intervalo de tiempo para aumentar la frecuencia con el tiempo
+            timeInterval -= 0.6
+            // Asegúrate de que el intervalo de tiempo no sea menor que un límite mínimo
+            timeInterval = max(timeInterval, 0.1)
+            
+            fast = max(fast,1.0)
+            
+            print("Enemy created in time interval \(timeInterval), and fast \(fast) ")
+        
+            // Puedes ajustar los valores según sea necesario
+        }
+    }
 
-             // Reduzca el intervalo de tiempo para aumentar la frecuencia con el tiempo
-             timeInterval *= 0.1
-             // Asegúrate de que el intervalo de tiempo no sea menor que un límite mínimo
-             timeInterval = max(timeInterval, 0.5)
-             print("Enemy created")
-         
-             // Puedes ajustar los valores según sea necesario
-         }
-     }
-     
      
      
      // MARK: - herojump
@@ -378,7 +398,7 @@ extension GameScene {
              guard let enemySpriteNode = enemyNode.children.first as? SKSpriteNode else { continue }
 
              // Calculate the attack range based on hero's position and direction
-             let attackRange: CGFloat = 200.0
+             let attackRange: CGFloat = 100.0
              let heroPositionX = heroSpriteNode.position.x
              let enemyPositionX = enemySpriteNode.position.x
 
