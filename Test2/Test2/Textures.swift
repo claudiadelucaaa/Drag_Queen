@@ -107,20 +107,10 @@ struct drag {
     var pic: String
 }
 
-struct dragGif {
-    var image: String
-}
-
 class Drags {
     let dragS =         [drag(name: "Bianca", image: "Bianca1", superPower: "Twist", pic: "Biancapic"),
                          drag(name: "Laganja", image: "Laganja1", superPower: "Lacca", pic: "Laganjapic"),
                          drag(name: "Jiggly", image: "Bianca3", superPower: "Wings", pic: "Jigglypic"),
                          drag(name: "Courtney", image: "Bianca4", superPower: "No one", pic: "Courtneypic")
     ]
-    
-    let biancaGif = [dragGif(image: "Bianca1"),
-                     dragGif(image: "Bianca2"),
-                     dragGif(image: "Bianca3"),
-                     dragGif(image: "Bianca4"),
-                     dragGif(image: "Bianca5")]
 }

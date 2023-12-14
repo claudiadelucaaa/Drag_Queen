@@ -93,7 +93,6 @@
 				7853FC2E2B29A477008B06D8 /* GameView.swift */,
 				6541279D2B221C8C007789E4 /* GameScene.swift */,
 				654F87C22B2B0048005DD4EA /* Textures.swift */,
-				657DBF8C2B2354C40023AB98 /* Controller */,
 				654127A42B221C8C007789E4 /* Assets.xcassets */,
 				657DBF932B2358A20023AB98 /* Main.storyboard */,
 				654F87BE2B2B000E005DD4EA /* StartView.swift */,
@@ -116,13 +115,6 @@
 				654F87B82B2AFFCF005DD4EA /* AtlantisHeadline-Bold.ttf */,
 			);
 			path = atlantis;
-			sourceTree = "<group>";
-		};
-		657DBF8C2B2354C40023AB98 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,7 +337,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SFL626YUT9;
+				DEVELOPMENT_TEAM = Z7AQTK42KX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Test2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -359,7 +351,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.YatziriPineda.NegroniChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.claudiadeluca.NegroniChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -374,7 +366,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SFL626YUT9;
+				DEVELOPMENT_TEAM = Z7AQTK42KX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Test2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -388,7 +380,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.YatziriPineda.NegroniChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.claudiadeluca.NegroniChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
