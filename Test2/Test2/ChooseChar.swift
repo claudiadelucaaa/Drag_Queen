@@ -40,6 +40,7 @@ struct ChooseChar: View {
                                 dragSelected = drg.image
                                 currentDragSelected  = drg.type
                             }
+                            isSelected.toggle()
                         }, label: {
                             VStack {
                                 Image(drg.pic)
