@@ -121,12 +121,12 @@ class Drags {
                               pic: "Laganjapic"),
                          drag(type: .jiggly, 
                               name: "Jiggly",
-                              image: "Bianca3",
+                              image: "Jiggly1",
                               superPower: "Wings",
                               pic: "Jigglypic"),
                          drag(type: .courtney, 
                               name: "Courtney",
-                              image: "Bianca4",
+                              image: "Courtney1",
                               superPower: "No one",
                               pic: "Courtneypic")
     ]
