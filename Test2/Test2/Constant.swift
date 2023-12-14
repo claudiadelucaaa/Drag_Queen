@@ -16,3 +16,11 @@ enum GameState {
     case playing
     case gameOver
 }
+
+
+enum DragChoice {
+    case bianca
+    case laganja
+    case jiggly
+    case courtney
+}
