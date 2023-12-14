@@ -11,6 +11,8 @@ import SwiftUI
 
 
 enum GameState {
+    case firstTime
+    case chooseChar
     case playing
     case gameOver
 }

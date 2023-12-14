@@ -11,7 +11,6 @@
 
 class GameScene: SKScene {
      
-     weak var gameVC : GameViewController?
      var gameLogic: ArcadeGameLogic = ArcadeGameLogic.shared
      
      var heroInAir = false
@@ -125,7 +124,7 @@ class GameScene: SKScene {
      
      func addHero(at position: CGPoint) {
          heroSpriteNode = SKSpriteNode(texture: heroNodeTexture)
-         let heroRunAnimation = SKAction.animate(with: textures.dragWalking , timePerFrame: 0.1)
+         let heroRunAnimation = SKAction.animate(with: textures.biancaWalking , timePerFrame: 0.1)
          let heroRun = SKAction.repeatForever(heroRunAnimation)
          heroSpriteNode.run(heroRun)
          
@@ -359,13 +358,13 @@ extension GameScene {
      func launchAttack(isRightSide: Bool) {
          
          if isRightSide {
-             let deathAnim = SKAction.animate(with: textures.dragAttack, timePerFrame: 0.1)
+             let deathAnim = SKAction.animate(with: textures.biancaAttack, timePerFrame: 0.1)
              heroSpriteNode.run(deathAnim) {
                  
              }
              print("💥 Attacking on the RIGHT side!")
          } else {
-             let deathAnim = SKAction.animate(with: textures.dragAttack, timePerFrame: 0.1)
+             let deathAnim = SKAction.animate(with: textures.biancaAttack, timePerFrame: 0.1)
              heroSpriteNode.run(deathAnim) {
                  
              }
