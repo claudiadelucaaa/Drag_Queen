@@ -100,6 +100,7 @@ class Textures {
 }
 
 struct drag {
+    var type: DragChoice = .bianca
     var id: UUID = UUID()
     var name: String
     var image: String
@@ -108,9 +109,25 @@ struct drag {
 }
 
 class Drags {
-    let dragS =         [drag(name: "Bianca", image: "Bianca1", superPower: "Twist", pic: "Biancapic"),
-                         drag(name: "Laganja", image: "Laganja1", superPower: "Lacca", pic: "Laganjapic"),
-                         drag(name: "Jiggly", image: "Bianca3", superPower: "Wings", pic: "Jigglypic"),
-                         drag(name: "Courtney", image: "Bianca4", superPower: "No one", pic: "Courtneypic")
+    let dragS =         [drag(type: .bianca, 
+                              name: "Bianca",
+                              image: "Bianca1",
+                              superPower: "Twist",
+                              pic: "Biancapic"),
+                         drag(type: .laganja, 
+                              name: "Laganja",
+                              image: "Laganja1",
+                              superPower: "Lacca",
+                              pic: "Laganjapic"),
+                         drag(type: .jiggly, 
+                              name: "Jiggly",
+                              image: "Bianca3",
+                              superPower: "Wings",
+                              pic: "Jigglypic"),
+                         drag(type: .courtney, 
+                              name: "Courtney",
+                              image: "Bianca4",
+                              superPower: "No one",
+                              pic: "Courtneypic")
     ]
 }

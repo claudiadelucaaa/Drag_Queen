@@ -12,10 +12,10 @@
 //
 
 import SwiftUI
-import SpriteKit
 
 struct ChooseChar: View {
     @Binding var currentGameState: GameState
+    @Binding var currentDragSelected: DragChoice
     
     var drags = Drags()
     
@@ -38,6 +38,7 @@ struct ChooseChar: View {
                             isSelected.toggle()
                             if isSelected {
                                 dragSelected = drg.image
+                                currentDragSelected  = drg.type
                             }
                         }, label: {
                             VStack {
@@ -69,6 +70,7 @@ struct ChooseChar: View {
                 
                 Button(action: {
                     currentGameState = .playing
+                    print(currentDragSelected)
                 }, label: {
                     Text("Fight")
                         .font(.custom("Atlantis Headline",
@@ -90,6 +92,8 @@ struct ChooseChar: View {
     }
 }
 
-#Preview {
-    ChooseChar(currentGameState: .constant(GameState.chooseChar))
-}
+//#Preview {
+//    ChooseChar(currentGameState: .constant(GameState.chooseChar), 
+//               currentDragSelected: DragChoice.bianca)
+//}
+
