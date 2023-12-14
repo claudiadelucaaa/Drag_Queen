@@ -98,6 +98,7 @@ struct drag {
     var name: String
     var image: String
     var superPower: String
+    var pic: String
 }
 
 struct dragGif {
@@ -105,10 +106,10 @@ struct dragGif {
 }
 
 class Drags {
-    let dragS =         [drag(name: "Bianca", image: "Bianca1", superPower: "Twist"),
-                         drag(name: "Laganja", image: "Laganja1", superPower: "Lacca"),
-                         drag(name: "Bianca3", image: "Bianca3", superPower: "Wings"),
-                         drag(name: "Bianca4", image: "Bianca4", superPower: "No one")
+    let dragS =         [drag(name: "Bianca", image: "Bianca1", superPower: "Twist", pic: "Biancapic"),
+                         drag(name: "Laganja", image: "Laganja1", superPower: "Lacca", pic: "Laganjapic"),
+                         drag(name: "Jiggly", image: "Bianca3", superPower: "Wings", pic: "Jigglypic"),
+                         drag(name: "Courtney", image: "Bianca4", superPower: "No one", pic: "Courtneypic")
     ]
     
     let biancaGif = [dragGif(image: "Bianca1"),
