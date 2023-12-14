@@ -42,7 +42,7 @@ class ArcadeGameLogic: ObservableObject {
         self.sessionDuration = self.sessionDuration + timeIncrement
     }
     
-    func restartGame() {
+    func restart_Game() {
         
         // TODO: Customize!
         

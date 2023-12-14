@@ -56,7 +56,7 @@ struct GameOverView: View {
     }
     
     private func backToMainScreen() {
-        self.currentGameState = .playing
+        self.currentGameState = .chooseChar
     }
     
     private func restartGame() {
