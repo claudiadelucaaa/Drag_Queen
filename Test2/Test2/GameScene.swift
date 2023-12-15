@@ -472,13 +472,9 @@ extension GameScene {
                 enemySpriteNode.run(deathAnim) {
                    
                     enemySpriteNode.removeFromParent()
-                     // Remove enemy from the scene
+                    self.gameLogic.score(points: 1)
                 }
-                // Enemy is within the attack range on the correct side
                 
-                
-                // Increment victory counter or perform any other logic
-                gameLogic.score(points: 1)
                 //                 printContent("------Point : \(gameLogic.currentScore)")
                 
                 print("💥 Attacking on the \(isRightSide ? "RIGHT" : "LEFT") side! Enemy defeated!")

@@ -28,8 +28,6 @@
 		7853FC2F2B29A477008B06D8 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853FC2E2B29A477008B06D8 /* GameView.swift */; };
 		7853FC312B29A4F0008B06D8 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853FC302B29A4F0008B06D8 /* GameOverView.swift */; };
 		F6BD3C662B2C44B8008F1830 /* Sissy That Walk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F6BD3C652B2C44B8008F1830 /* Sissy That Walk.mp3 */; };
-		F6BD3C6E2B2C49BB008F1830 /* okrrr.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F6BD3C6D2B2C49BB008F1830 /* okrrr.mp3 */; };
-		F6BD3C742B2C4D2D008F1830 /* VeryAttacked.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F6BD3C732B2C4D2D008F1830 /* VeryAttacked.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,8 +54,6 @@
 		7853FC2E2B29A477008B06D8 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		7853FC302B29A4F0008B06D8 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		F6BD3C652B2C44B8008F1830 /* Sissy That Walk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sissy That Walk.mp3"; sourceTree = "<group>"; };
-		F6BD3C6D2B2C49BB008F1830 /* okrrr.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = okrrr.mp3; path = ../../../../../Desktop/okrrr.mp3; sourceTree = "<group>"; };
-		F6BD3C732B2C4D2D008F1830 /* VeryAttacked.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = VeryAttacked.mp3; path = ../../../../../Desktop/VeryAttacked.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +103,6 @@
 				7853FBFD2B276E63008B06D8 /* Arcade_GameLogic.swift */,
 				7853FC2C2B29A41D008B06D8 /* Constant.swift */,
 				7853FC302B29A4F0008B06D8 /* GameOverView.swift */,
-				F6BD3C732B2C4D2D008F1830 /* VeryAttacked.mp3 */,
-				F6BD3C6D2B2C49BB008F1830 /* okrrr.mp3 */,
 				F6BD3C652B2C44B8008F1830 /* Sissy That Walk.mp3 */,
 			);
 			path = Test2;
@@ -191,9 +185,7 @@
 				F6BD3C662B2C44B8008F1830 /* Sissy That Walk.mp3 in Resources */,
 				654127A52B221C8C007789E4 /* Assets.xcassets in Resources */,
 				654F87BD2B2AFFCF005DD4EA /* AtlantisHeadline-Bold.ttf in Resources */,
-				F6BD3C6E2B2C49BB008F1830 /* okrrr.mp3 in Resources */,
 				654F87BA2B2AFFCF005DD4EA /* README.txt in Resources */,
-				F6BD3C742B2C4D2D008F1830 /* VeryAttacked.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
