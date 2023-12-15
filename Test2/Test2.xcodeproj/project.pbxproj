@@ -27,6 +27,7 @@
 		7853FC2D2B29A41D008B06D8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853FC2C2B29A41D008B06D8 /* Constant.swift */; };
 		7853FC2F2B29A477008B06D8 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853FC2E2B29A477008B06D8 /* GameView.swift */; };
 		7853FC312B29A4F0008B06D8 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853FC302B29A4F0008B06D8 /* GameOverView.swift */; };
+		F6BD3C642B2C4289008F1830 /* Sissy That Walk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F6BD3C632B2C4289008F1830 /* Sissy That Walk.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		7853FC2C2B29A41D008B06D8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		7853FC2E2B29A477008B06D8 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		7853FC302B29A4F0008B06D8 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		F6BD3C632B2C4289008F1830 /* Sissy That Walk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sissy That Walk.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				7853FC262B286FB1008B06D8 /* GameScoreView.swift */,
 				7853FBFD2B276E63008B06D8 /* Arcade_GameLogic.swift */,
 				7853FC2C2B29A41D008B06D8 /* Constant.swift */,
+				F6BD3C632B2C4289008F1830 /* Sissy That Walk.mp3 */,
 				7853FC302B29A4F0008B06D8 /* GameOverView.swift */,
 			);
 			path = Test2;
@@ -179,6 +182,7 @@
 				654F87BB2B2AFFCF005DD4EA /* AtlantisText-Bold.ttf in Resources */,
 				654F87B92B2AFFCF005DD4EA /* AtlantisText-Regular.ttf in Resources */,
 				657DBF942B2358A20023AB98 /* Main.storyboard in Resources */,
+				F6BD3C642B2C4289008F1830 /* Sissy That Walk.mp3 in Resources */,
 				654127A52B221C8C007789E4 /* Assets.xcassets in Resources */,
 				654F87BD2B2AFFCF005DD4EA /* AtlantisHeadline-Bold.ttf in Resources */,
 				654F87BA2B2AFFCF005DD4EA /* README.txt in Resources */,
@@ -337,7 +341,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z7AQTK42KX;
+				DEVELOPMENT_TEAM = BUFTZ3AZV8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Test2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -351,7 +355,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.claudiadeluca.NegroniChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinandoliccardi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -366,7 +370,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z7AQTK42KX;
+				DEVELOPMENT_TEAM = BUFTZ3AZV8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Test2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -380,7 +384,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.claudiadeluca.NegroniChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferdinandoliccardi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
