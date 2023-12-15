@@ -96,6 +96,11 @@ class Textures {
                                         SKTexture(imageNamed: "Laganja6"),
                                         SKTexture(imageNamed: "Laganja7")
     ]
+    let lacaAttack : [SKTexture] = [SKTexture(imageNamed: "laca3"),
+                                    SKTexture(imageNamed: "laca2"),
+                                        SKTexture(imageNamed: "laca1"),
+                                        SKTexture(imageNamed: "laca1")
+    ]
     
 }
 

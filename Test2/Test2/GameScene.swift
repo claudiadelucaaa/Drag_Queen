@@ -35,6 +35,10 @@ class GameScene: SKScene {
     var heroSpriteNode = SKSpriteNode()
     var heroNode = SKNode()
     
+    var lacaNodeTexture = SKTexture(imageNamed: "laca3")
+    var lacaSpriteNode = SKSpriteNode()
+    var lacaNode = SKNode()
+    
     var backGroundNodeArray = [SKNode]()
     var enemyNodeArray = [SKNode]()
     
@@ -398,19 +402,55 @@ extension GameScene {
         }
     }
     
+    func createLaca(space: Int) {
+        lacaSpriteNode = SKSpriteNode(texture: lacaNodeTexture)
+        lacaSpriteNode.setScale(0.1)
+        lacaSpriteNode.position = CGPoint(x: heroSpriteNode.position.x + CGFloat(space) , y: heroSpriteNode.position.y)
+        lacaSpriteNode.zPosition = 1
+
+        lacaSpriteNode.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: lacaNodeTexture.size().width, height: lacaNodeTexture.size().height))
+        lacaSpriteNode.physicsBody?.isDynamic = false
+        lacaSpriteNode.physicsBody?.categoryBitMask = advantagMask
+        lacaSpriteNode.physicsBody?.contactTestBitMask = enemyMask
+        lacaSpriteNode.physicsBody?.collisionBitMask = 5
+
+        heroNode.addChild(lacaSpriteNode)
+    }
+    
     func launchAttack(isRightSide: Bool) {
-        
+        if lacaSpriteNode.parent != nil {
+            // La laca ya está en la escena, puedes reiniciar su posición o realizar otras acciones necesarias
+            self.lacaSpriteNode.removeFromParent()
+        }
         if isRightSide {
+            createLaca(space: 70)
             let deathAnim = SKAction.animate(with: textures.biancaAttack, timePerFrame: 0.1)
+            lacaSpriteNode.xScale *= -1
+            let lacaAnim = SKAction.animate(with: textures.lacaAttack, timePerFrame: 0.1)
             heroSpriteNode.run(deathAnim) {
+               
+                self.lacaSpriteNode.run(lacaAnim) {
+                    
+                    self.lacaSpriteNode.removeFromParent()
+                }
                 
             }
+           
             //             print("💥 Attacking on the RIGHT side!")
         } else {
+            createLaca(space: -70)
             let deathAnim = SKAction.animate(with: textures.biancaAttack, timePerFrame: 0.1)
+            let lacaAnim = SKAction.animate(with: textures.lacaAttack, timePerFrame: 0.1)
+            
             heroSpriteNode.run(deathAnim) {
+               
+                self.lacaSpriteNode.run(lacaAnim) {
+                    
+                    self.lacaSpriteNode.removeFromParent()
+                }
                 
             }
+            
             //             print("💥 Attacking on the LEFT side!")
         }
         
@@ -422,14 +462,20 @@ extension GameScene {
             
             // Calculate the attack range based on hero's position and direction
             let attackRange: CGFloat = 170.0
-            let heroPositionX = heroSpriteNode.position.x
+            let heroPositionX = lacaSpriteNode.position.x
             let enemyPositionX = enemySpriteNode.position.x
-            
+            let deathAnim = SKAction.animate(with: textures.deathTextureArray, timePerFrame: 0.2)
             if (isRightSide && heroPositionX < enemyPositionX && enemyPositionX - heroPositionX < attackRange) ||
                 (!isRightSide && heroPositionX > enemyPositionX && heroPositionX - enemyPositionX < attackRange) {
                 
+                enemySpriteNode.removeAllActions()
+                enemySpriteNode.run(deathAnim) {
+                   
+                    enemySpriteNode.removeFromParent()
+                     // Remove enemy from the scene
+                }
                 // Enemy is within the attack range on the correct side
-                enemySpriteNode.removeFromParent() // Remove enemy from the scene
+                
                 
                 // Increment victory counter or perform any other logic
                 gameLogic.score(points: 1)
@@ -442,4 +488,5 @@ extension GameScene {
             }
         }
     }
+    
 }
